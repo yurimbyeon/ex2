@@ -1,0 +1,46 @@
+1. 저장소 등록
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 0C49F3730359A14518585931BC711F9BA15703C6
+
+2.몽고db에관련된 정보정의
+echo "deb [ arch=amd64,arm64 ] http://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.4 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.4.list
+
+3.업데이트
+sudo apt-get update
+
+4.몽고db패키지 설치
+sudo apt-get install -y mongodb-org
+
+putty.exe 실행
+ubuntu@52.78.124.121
+robo3t에 콘넥션에 create해서 ssh의 자신의 ubunto 주소를 입력하고 _pem을 찾아라
+
+5.
+sudo service mongod start
+
+forever > pm2 (프로세스 관리)
+
+-------------------------------------------------------------------------------------------------------------------------------------
+express --ejs ex2
+
+npm i
+
+----------------------------------------------------------------------------------------------------------------------
+이 폴더에 git을 사용
+
+//github.com
+//ex2라는 저장소를 만든다
+
+//pc
+git init
+git add .
+git commit -m "first commit"
+git remote add origin https://github.com/yurimbyeon/ex2.git
+git push -u origin master
+
+//소스 수정 후 명령어
+git add .
+git commit -m "xxx commit"
+git push -u origin master
+
+//aws
+gli clone https://github.com/yurimbyeon/ex2.git
